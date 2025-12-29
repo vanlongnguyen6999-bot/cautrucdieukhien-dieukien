@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type = "number" id = "a" placeholder = "Nhập số a">
+    <br>
+    <input type = "number" id = "b" placeholder = "Nhập số b">
+    <p id = "Kết quả: "></p>
+    <button onclick = "check()">Kiểm Tra</button>
+    <script>
+        function check(){
+            let a = parseFloat(document.getElementById("a").value);
+            let b = parseFloat(document.getElementById("b").value);
+            if((a + b) < 4){
+                document.getElementById("Kết quả: ").innerText = "Below";
+            }
+            else{
+                document.getElementById("Kết quả: ").innerText = "Over";
+            }
+        }
+    </script>
+</body>
+</html>
