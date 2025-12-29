@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type = "text" id = "username">
+    <br>
+    <button onclick = "login()">Nhập mật khẩu</button>
+    <script>
+        function login(){
+            let username = document.getElementById("username").value;
+            if(username === "admin"){
+                let password = prompt("Nhập mật khẩu: ", "");
+                if(password === "TheMaster"){
+                    alert("Welcome");
+              }
+                else if(password === ""){
+                    alert("Canceled");
+                }
+                else{
+                    alert("Wrong password");
+                }
+            }
+            else if(username === "" || username === null){
+                alert("Canceled");
+            }
+            else{
+                alert("I don't know you");
+            }
+        }
+        </script>
+</body>
+</html>
